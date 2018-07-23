@@ -40,10 +40,12 @@
 							</div>
 							<div class="main-menubar d-flex align-items-center">
 								<nav class="hide">
-									<a href="#home">Home</a>
-									<a href="#service">Services</a>
-									<a href="#appoinment">Appoinment</a>
-									<a href="#consultant">Consultants</a>
+									<a href="#home">Anasayfa</a>
+									<a href="#service">Hizmetler</a>
+									<a href="#products">Ürünlerimiz</a>
+									<a href="#appoinment">Randevu Al</a>
+									<a href="#consultant">Doktorlarımız</a>
+									<a href="#aboutus">Hakkımızda</a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
@@ -63,9 +65,17 @@
 									of excellence
 								</h1>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
+									Y Ürünler 2005 yılında kurulmuş ve ülkemizdeki seçkin sağlık kuruluşlarının laboratuvar ihtiyaçları için vazgeçilmez bir kaynak olmuştur. 
+									 Faaliyet alanı x Ürünler olan y Tıbbi Ürünler Paz.San. 
+									Ve Tic. Ltd.Şti. kurulduğu günden bu yana tüm dünyada kullanılan kaliteli ürünleri uygun fiyat ile sağlık sektörü hizmetine sunmuş ve uzman kadrosu ile müşterilerine satış sonrası gerekli olan desteği en iyi şekilde vermeyi prensip edinmiştir...
 								</p>
-								<button class="primary-btn2 mt-20 text-uppercase ">Get Started<span class="lnr lnr-arrow-right"></span></button>
+									<button data-toggle="collapse" data-target="#demo" class="primary-btn2 mt-20 text-uppercase ">Detaylı Bilgiler<span class="lnr lnr-arrow-right"></span></button>
+								<div id="demo" class="collapse">
+									<br>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								  </div>
 							</div>
 							<div class="col-lg-6 d-flex align-self-end img-right">
 								<img class="img-fluid" src="img/header-img.png" alt="">
@@ -153,52 +163,12 @@
 				</div>
 			</section>
 			<!-- End feature Area -->
-
-
-			<!-- Start about Area -->
-			<section class="about-area" id="appoinment">
-				<div class="container-fluid">
-					<div class="row d-flex justify-content-end align-items-center">
-						<div class="col-lg-6 col-md-12 about-left no-padding">
-							<img class="img-fluid" src="img/about-img.jpg" alt="">
-						</div>
-						<div class="col-lg-6 col-md-12 about-right no-padding">
-							<h1>Book an <br> Appoinment</h1>
-							<form class="booking-form" id="myForm" action="donate.php">
-								 	<div class="row">
-								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="name" placeholder="Patient name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control mt-20" required="" type="text" required>
-								 		</div>
-							 			<div class="col-lg-6 d-flex flex-column">
-											<input name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text" required>
-										</div>
-										<div class="col-lg-6 d-flex flex-column">
-											<input id="datepicker2" name="app-date" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Appoinment date" required>
-										</div>
-										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-										</div>
-
-										<div class="col-lg-12 d-flex justify-content-end send-btn">
-											<button class="submit-btn primary-btn mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></button>
-										</div>
-
-										<div class="alert-msg"></div>
-									</div>
-					  		</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- End about Area -->
-
-			<!-- Start consultans Area -->
-			<section class="consultans-area section-gap" id="consultant">
-				<div class="container">
+    <!--start  product area-->
+			<section class="products-area section-gap" id="products">
+				<div class="container" >
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-8 pb-80 header-text">
-							<h1>Our Consultants</h1>
+							<h1>Ürünlerimiz</h1>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.
 							</p>
@@ -273,8 +243,153 @@
 					</div>
 				</div>
 			</section>
-			<!-- End consultans Area -->
+			<!-- End products Area -->
 
+
+			
+
+
+			<!-- Start about Area -->
+			<section class="about-area" id="appoinment">
+				<div class="container-fluid">
+					<div class="row d-flex justify-content-end align-items-center">
+						<div class="col-lg-6 col-md-12 about-left no-padding">
+							<img class="img-fluid" src="img/about-img.jpg" alt="">
+						</div>
+						<div class="col-lg-6 col-md-12 about-right no-padding">
+							<h1>Book an <br> Appoinment</h1>
+							<form class="booking-form" id="myForm" action="donate.php">
+								 	<div class="row">
+								 		<div class="col-lg-12 d-flex flex-column">
+							 				<input name="name" placeholder="Patient name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control mt-20" required="" type="text" required>
+								 		</div>
+							 			<div class="col-lg-6 d-flex flex-column">
+											<input name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text" required>
+										</div>
+										<div class="col-lg-6 d-flex flex-column">
+											<input id="datepicker2" name="app-date" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Appoinment date" required>
+										</div>
+										<div class="col-lg-12 flex-column">
+											<textarea class="form-control mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+										</div>
+
+										<div class="col-lg-12 d-flex justify-content-end send-btn">
+											<button class="submit-btn primary-btn mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></button>
+										</div>
+
+										<div class="alert-msg"></div>
+									</div>
+					  		</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End about Area -->
+
+			<!-- Start consultans Area -->
+			<section class="consultans-area section-gap" id="consultant">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-8 pb-80 header-text">
+							<h1>Our Consultants</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore  et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 vol-wrap">
+							<div class="single-con">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/d1.jpg" alt="">
+								      	<div class="content-details fadeIn-bottom">
+								      		<h4>Andy Florence</h4>
+								      		<p>
+								      			inappropriate behavior
+								      		</p>
+								      	</div>
+								    </a>
+								 </div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 vol-wrap">
+							<div class="single-con">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/d2.jpg" alt="">
+								      	<div class="content-details fadeIn-bottom">
+								      		<h4>Andy Florence</h4>
+								      		<p>
+								      			inappropriate behavior
+								      		</p>
+								      	</div>
+								    </a>
+								 </div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 vol-wrap">
+							<div class="single-con">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/d1.jpg" alt="">
+								      	<div class="content-details fadeIn-bottom">
+								      		<h4>Andy Florence</h4>
+								      		<p>
+								      			inappropriate behavior
+								      		</p>
+								      	</div>
+								    </a>
+								 </div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 vol-wrap">
+							<div class="single-con">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/d4.jpg" alt="">
+								      	<div class="content-details fadeIn-bottom">
+								      		<h4>Andy Florence</h4>
+								      		<p>
+								      			inappropriate behavior
+								      		</p>
+								      	</div>
+								    </a>
+								 </div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- End consultans Area -->
+ 
+			<!--start aboutus area-->
+<section class="" id="aboutus">
+<div class="container">
+	<div class="justify-content-center" >
+		<h1>Hakkımızda</h1><br><br>
+		<p>Türkiye'nin üreten ve değer yaratan ülke olma yolundaki dönüşümünü girişimcilik ile hızlandırmak vizyonu ile kurulan Türkiye Girişimcilik Vakfı (Girvak), Türkiye'de girişimcilik kültürünü oluşturmak ve yaygınlaştırmak misyonu ile çalışıyor.
+
+			2014 yılında yola çıkan Girvak, girişimciliğin değişimin anahtarı olduğuna inanan iş insanları ve fikir önderleri ile birlikte girişimcilik kültürünün yaygınlaşması ve girişimciliğin gençler arasında bir kariyer seçeneği haline gelmesi için çalışmalarına hız kesmeden devam ediyor.</p>
+
+		</p>	
+
+		</div>
+</div>
+
+
+
+
+</section>
+<!--ends aboutus area-->
+<br>
+<br>
 			<!-- Start fact Area -->
 			<section class="facts-area pt-100 pb-100">
 				<div class="container">
