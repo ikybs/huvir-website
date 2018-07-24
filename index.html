@@ -28,6 +28,19 @@
 			<link rel="stylesheet" href="css/bootstrap.css">
 			<link rel="stylesheet" href="css/main.css">
 
+			<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
 			<style>
 					
 					
@@ -54,8 +67,9 @@
 
 		</head>
 		<body>
+			
 
-				<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 				
 				<script>
@@ -284,16 +298,16 @@
 							<form class="booking-form" id="myForm" action="donate.php">
 								 	<div class="row">
 								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="name" placeholder="Hasta Adı" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient name'" class="form-control mt-20" required="" type="text" required>
+							 				<input name="name" placeholder="Hasta Adı" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hasta Adı'" class="form-control mt-20" required="" type="text" required>
 								 		</div>
 							 			<div class="col-lg-6 d-flex flex-column">
-											<input name="phone" placeholder="Telefon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'" class="form-control mt-20" required="" type="text" required>
+											<input name="phone" placeholder="Telefon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon'" class="form-control mt-20" required="" type="text" required>
 										</div>
 										<div class="col-lg-6 d-flex flex-column">
-											<input id="datepicker2" name="Appoinment-date" class="single-in mt-20"  onblur="this.placeholder = 'Appoinment date'" type="text" placeholder="Randevu tarihi" required>
+											<input id="datepicker2" name="Appoinment-date" class="single-in mt-20"  onblur="this.placeholder = 'Randevu tarihi'" type="text" placeholder="Randevu tarihi" required>
 										</div>
 										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="Messege" placeholder="Açıklama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+											<textarea class="form-control mt-20" name="Messege" placeholder="Açıklama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Açıklama'" required=""></textarea>
 										</div>
 
 										<div class="col-lg-12 d-flex justify-content-end send-btn">
