@@ -1,0 +1,22 @@
+﻿a.nav-link.active{
+    color: black;
+}
+
+aside.sidebar{
+    background-color:#e6e6e6;
+    box-sizing:border-box;
+    width: 220px;
+    height: 300px;
+    font-family:'Times New Roman';
+    font-size: 12px;
+
+ 
+}
+.heading-primary{
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    text-align: inherit;
+}
+
+
+
