@@ -24,8 +24,17 @@ aside.sidebar{
     display: flex;
  
   }
-form#Search.Search{
+  ul.breadcrumb{
+    background-color:#e6e6e6;
+
+  }
+  input[type="text"] {
+    width: 5050px;
+  }
+  
+
+/*form#Search.Search{
  
 
    
-}
+}*/
