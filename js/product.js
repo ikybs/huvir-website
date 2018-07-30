@@ -28,14 +28,18 @@ $('.Main-iso').isotope({
     var $grid = $('.grid').isotope({
       getSortData: {
         name: '.name', // text from querySelector
-         brand:'.brand',
+         brand:'.brand'
          
+        /* price: function( elem ) {
+          var price = parseFloat( $elem.find('.price').text().replace('$', '') );
+          return price;*/
+        }
        /* category: '[data-category]', // value of attribute*/
         /*price: function( itemElem ) { // function
           var price = $( itemElem ).find('.price').text();
           return parseFloat( price.replace( /[\(\)]/g, '') );
-        }*/
-      },
+        }
+    },*/
       
     });
    
@@ -48,3 +52,4 @@ $('.Main-iso').isotope({
     });
   });
   
+ 
