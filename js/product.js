@@ -26,30 +26,34 @@ $('.Main-iso').isotope({
 
   $(document).ready(function(){
     var $grid = $('.grid').isotope({
+
       getSortData: {
         name: '.name', // text from querySelector
-         brand:'.brand'
+         brand:'.brand',
          
-        /* price: function( elem ) {
-          var price = parseFloat( $elem.find('.price').text().replace('$', '') );
-          return price;*/
+        price: function( elem ) {
+          var price =$(elem).find('.price').text();
+
+          return parseFloat(price.replace('$', '') );
+          
         }
+
        /* category: '[data-category]', // value of attribute*/
         /*price: function( itemElem ) { // function
           var price = $( itemElem ).find('.price').text();
           return parseFloat( price.replace( /[\(\)]/g, '') );
-        }
+        }.replace('$', '') )
     },*/
-      
+  }
     });
-   
-  
+ 
   
   
     $('.selected').on( 'change', function() {
       var sortByValue = this.options[this.selectedIndex].getAttribute('data-sort-by');
       $grid.isotope({ sortBy: sortByValue });
     });
+    
   });
   
  
