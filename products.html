@@ -22,14 +22,14 @@
         CSS
         ============================================= -->
         <link rel="stylesheet" href="css/linearicons.css">=
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/nice-select.css">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet"  href="css/product.css">
-      <link rel="stylesheet" href="css/Thumb_info.css">
+        <link rel="stylesheet" href="css/Thumb_info.css">
       
 
         
@@ -55,10 +55,11 @@
                         <div class="main-menubar d-flex align-items-center">
                             <nav class="hide">
                                 <a href="#home" id="home">Anasayfa</a>
-                                <a href="#service">Hizmetler</a>
                                 <a href="products.html">Ürünlerimiz</a>
                                 <a href="#appoinment">Randevu Al</a>
+                                <a href="trainers.html">Eğitimcilerimiz</a>
                                 <a href="#consultant">Doktorlarımız</a>
+                                <a href="usefulinfo.html">Faydalı Bilgiler</a>
                                 
                             </nav>
                             <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
@@ -102,7 +103,7 @@
 <div class="wrapper">
 <div class="nav">
 
-       
+    
         <ul>
                 <li class="active" data-filter="*"><a class="nav-link active" href="#">Show All</a> </li>
                 <li  data-filter=".AminoAcids"><a class="nav-link active" href="#">Amino Acids</a> </li>
@@ -115,57 +116,92 @@
 
 </div>
 </aside>
-
+ 
 </div>
+
 <div class="col-lg-9 order-1 order-lg-2">
         <div class="container">
+
                 <div class="row">
-                    <div class="col-lg-11">
+
+                    <div class="col-lg-10">
+                      
+                        </div>
+                        <div class="col-lg-1/">
+
+                                <form id="Search" class="Search">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control" placeholder="Search">
+                                          <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                              <i class="fas fa-search"></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </form>
                        
-                    </div>
-                    <div class="col-lg-1">
-                            <p>
-                                    <select class="sorting select">
-                                        <option value="*">Sort By</option>
-                                        <option value=".Name">Name</option>
-                                        <option value=".ASC">Price (ASC) </option>
-                                        <option value=".DESC">Price (DESC) </option>
+                        </div>
+                    <div id="container" class="col-lg-1">
+      <p>
+                                <select class="selected" id="sortSelected">
+                                        <option   value="">Sort By</option>
+                                        <option  data-sort-by="name" >Name</option>
+                                        <option data-sort-by="brand">Brand</option>
+                                        <option data-sort-by="price">Price (ASC) </option>
+                                        <option  data-sort-by="price">Price (DESC) </option>
+                                       
                                     </select>
-         
-                                </p>
+                           </p>
+                    
                     </div>
+                   
                 </div>
+                  
+                   
+            
+
+               
                 <br>
-                <div class="row">
+               <div class="row">
                     <div class="col">
                         <h1></h1>
                     </div>
                 </div>
-            </div>
-<div class="Main-iso">
+                
+            </div>  
 
-         <div class="sort-destination-loader sort-destination-loader-showing">
-                <div class="row Product-list sort-destination" data-sort-id="Product">
-                    <div class="col-lg-4 isotope-item Minerals">
+  
+ 
+
+
+<div  class="Main-iso">            
+        <div class="sort-destination-loader sort-destination-loader-showing">
+                <div class="row Product-list grid ">
+
+                    <div class="col-lg-4  isotope-item Minerals">
+
                         <div class="Product-item">
-                            <a href="productdetails.html">
+                              
+                            <a  href="productdetails.html">
+
                                 <span class="thumb-info thumb-info-lighten">
                                     <span class="thumb-info-wrapper">
                                             <span class="owl-carousel owl-theme nav-inside m-0" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}">
 
                                         <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
-                                        <span class="thumb-info-title">
-                                            <span class="thumb-info-inner">dAlkaline_Mineraals</span>
-                                            <span class="thumb-info-type">dAlkaline</span>
+                                        <span class="thumb-info-title ">
+                                            <span class="thumb-info-inner name">Minerals </span>
+                                            <span class="thumb-info-type brand ">Mineral</span> 
                                         </span>
+                                        
                                         <span class="thumb-info-action">
                                             <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                         </span>
                                     </span>
                                 </span>
-                              
+                                <span  class="field-content price ">$16.15</span>
                             </a>
-                            <span  class="field-content">$16.15</span>
+                        
                         </div>
                     </div>
                     <div class="col-lg-4 isotope-item Oils">
@@ -175,18 +211,23 @@
                                         <span class="thumb-info-wrapper">
                                             <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                             <span class="thumb-info-title">
-                                                <span class="thumb-info-inner">Presentation</span>
-                                                <span class="thumb-info-type">Brand</span>
+                                                <span class="thumb-info-inner name">Oils</span>
+                                                <span class="thumb-info-type brand">Oil</span>
                                             </span>
                                             <span class="thumb-info-action">
                                                 <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                             </span>
                                         </span>
                                     </span>
+                                    <span  class="field-content price">$15.15</span>
                                 </a>
                             </div>
-                            <span  class="field-content">$15.15</span>
+                           
                         </div>
+
+
+
+
                         <div class="col-lg-4 isotope-item Vitamins">
                                 <div class="Product-item">
                                     <a href="productdetails.html">
@@ -194,17 +235,19 @@
                                             <span class="thumb-info-wrapper">
                                                 <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                 <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner">Presentation</span>
-                                                    <span class="thumb-info-type">Brand</span>
+                                                    <span class="thumb-info-inner name">Vitamins</span>
+                                                    <span class="thumb-info-type brand">Vitamin</span>
                                                 </span>
                                                 <span class="thumb-info-action">
                                                     <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                 </span>
                                             </span>
                                         </span>
+                                        <span  class="field-content price ">$18.15</span>
                                     </a>
+                                   
                                 </div>
-                                <span  class="field-content">$18.15</span>
+                               
                             </div>
                         
                             <div class="col-lg-4 isotope-item Perfumes">
@@ -214,17 +257,19 @@
                                                 <span class="thumb-info-wrapper">
                                                     <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                     <span class="thumb-info-title">
-                                                        <span class="thumb-info-inner">Presentation</span>
-                                                        <span class="thumb-info-type">Brand</span>
+                                                        <span class="thumb-info-inner name">Perfumes</span>
+                                                        <span class="thumb-info-type brand ">Perfume</span>
                                                     </span>
                                                     <span class="thumb-info-action">
                                                         <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                     </span>
                                                 </span>
                                             </span>
+                                            <span  class="field-content price">$26.15</span>
                                         </a>
+                                      
                                     </div>
-                                    <span  class="field-content">$26.15</span>
+                                   
                                 </div>
      
                                 <div class="col-lg-4 isotope-item Perfumes">
@@ -234,17 +279,19 @@
                                                     <span class="thumb-info-wrapper">
                                                         <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                         <span class="thumb-info-title">
-                                                            <span class="thumb-info-inner">Presentation</span>
-                                                            <span class="thumb-info-type">Brand</span>
+                                                            <span class="thumb-info-inner name">Perfumes</span>
+                                                            <span class="thumb-info-type brand">Perfume</span>
                                                         </span>
                                                         <span class="thumb-info-action">
                                                             <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                         </span>
                                                     </span>
                                                 </span>
+                                                <span  class="field-content price ">$36.15</span>
                                             </a>
+                                           
                                         </div>
-                                        <span  class="field-content">$36.15</span>
+                                    
                                     </div>
 
                                     <div class="col-lg-4 isotope-item Minerals">
@@ -254,17 +301,19 @@
                                                         <span class="thumb-info-wrapper">
                                                             <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                             <span class="thumb-info-title">
-                                                                <span class="thumb-info-inner">Presentation</span>
-                                                                <span class="thumb-info-type">Brand</span>
+                                                                <span class="thumb-info-inner name">Perfumes</span>
+                                                                <span class="thumb-info-type brand">Perfume</span>
                                                             </span>
                                                             <span class="thumb-info-action">
                                                                 <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                             </span>
                                                         </span>
                                                     </span>
+                                                    <span  class="field-content price">$36.45</span>
                                                 </a>
+                                              
                                             </div>
-                                            <span  class="field-content">$36.45</span>
+                                   
                                         </div>
 
                                         <div class="col-lg-4 isotope-item AminoAcids">
@@ -274,17 +323,19 @@
                                                             <span class="thumb-info-wrapper">
                                                                 <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                 <span class="thumb-info-title">
-                                                                    <span class="thumb-info-inner">Presentation</span>
-                                                                    <span class="thumb-info-type">Brand</span>
+                                                                    <span class="thumb-info-inner name">Amino Acids</span>
+                                                                    <span class="thumb-info-type brand">Amino</span>
                                                                 </span>
                                                                 <span class="thumb-info-action">
                                                                     <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                 </span>
                                                             </span>
                                                         </span>
-                                                    </a>
+                                                    
+                                                    <span  class="field-content price">$6.15</span>
+                                                </a>
                                                 </div>
-                                                <span  class="field-content">$6.15</span>
+                                            
                                             </div>
     
                                             <div class="col-lg-4 isotope-item Minerals">
@@ -294,17 +345,19 @@
                                                                 <span class="thumb-info-wrapper">
                                                                     <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                     <span class="thumb-info-title">
-                                                                        <span class="thumb-info-inner">Presentation</span>
-                                                                        <span class="thumb-info-type">Brand</span>
+                                                                        <span class="thumb-info-inner name">Minerals</span>
+                                                                        <span class="thumb-info-type brand">Mineral</span>
                                                                     </span>
                                                                     <span class="thumb-info-action">
                                                                         <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                     </span>
                                                                 </span>
                                                             </span>
+                                                            <span  class="field-content price">$26.35</span>
                                                         </a>
+                                                       
                                                     </div>
-                                                    <span  class="field-content">$26.35</span>
+                                                  
                                                 </div>
         
                                                 <div class="col-lg-4 isotope-item AminoAcids">
@@ -314,17 +367,19 @@
                                                                     <span class="thumb-info-wrapper">
                                                                         <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                         <span class="thumb-info-title">
-                                                                            <span class="thumb-info-inner">Presentation</span>
-                                                                            <span class="thumb-info-type">Brand</span>
+                                                                            <span class="thumb-info-inner  name">AminoAcids</span>
+                                                                            <span class="thumb-info-type brand ">Amino</span>
                                                                         </span>
                                                                         <span class="thumb-info-action">
                                                                             <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                         </span>
                                                                     </span>
                                                                 </span>
+                                                                <span  class="field-content price ">$6.75</span>
                                                             </a>
+                                                           
                                                         </div>
-                                                        <span  class="field-content">$6.75</span>
+                                                       
                                                     </div>
             
                                                     <div class="col-lg-4 isotope-item Vitamins">
@@ -334,17 +389,19 @@
                                                                         <span class="thumb-info-wrapper">
                                                                             <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                             <span class="thumb-info-title">
-                                                                                <span class="thumb-info-inner">Presentation</span>
-                                                                                <span class="thumb-info-type">Brand</span>
+                                                                                <span class="thumb-info-inner name">Vitamins</span>
+                                                                                <span class="thumb-info-type brand">Vitamin</span>
                                                                             </span>
                                                                             <span class="thumb-info-action">
                                                                                 <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                             </span>
                                                                         </span>
                                                                     </span>
+                                                                    <span  class="field-content price">$26.05</span>
                                                                 </a>
+                                                                
                                                             </div>
-                                                            <span  class="field-content">$26.05</span>
+                                                           
                                                         </div>
                 
 
@@ -355,17 +412,19 @@
                                                                             <span class="thumb-info-wrapper">
                                                                                 <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                                 <span class="thumb-info-title">
-                                                                                    <span class="thumb-info-inner">Presentation</span>
-                                                                                    <span class="thumb-info-type">Brand</span>
+                                                                                    <span class="thumb-info-inner name">Oils</span>
+                                                                                    <span class="thumb-info-type brand">Oil</span>
                                                                                 </span>
                                                                                 <span class="thumb-info-action">
                                                                                     <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                                 </span>
                                                                             </span>
                                                                         </span>
+                                                                        <span  class="field-content price">$17.15</span>
                                                                     </a>
+                                                                    
                                                                 </div>
-                                                                <span  class="field-content">$17.15</span>
+                                                              
                                                             </div>
                     
                                                             <div class="col-lg-4 isotope-item Herbs">
@@ -375,17 +434,19 @@
                                                                                 <span class="thumb-info-wrapper">
                                                                                     <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                                     <span class="thumb-info-title">
-                                                                                        <span class="thumb-info-inner">Presentation</span>
-                                                                                        <span class="thumb-info-type">Brand</span>
+                                                                                        <span class="thumb-info-inner name">Herbs</span>
+                                                                                        <span class="thumb-info-type brand">Herb</span>
                                                                                     </span>
                                                                                     <span class="thumb-info-action">
                                                                                         <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                                     </span>
                                                                                 </span>
                                                                             </span>
+                                                                            <span  class="field-content price">$19.15</span>
                                                                         </a>
+                                                                      
                                                                     </div>
-                                                                    <span  class="field-content">$19.15</span>
+                                                                   
                                                                 </div>
                         
                                                             <div class="col-lg-4 isotope-item Herbs">
@@ -395,17 +456,19 @@
                                                                                 <span class="thumb-info-wrapper">
                                                                                     <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                                     <span class="thumb-info-title">
-                                                                                        <span class="thumb-info-inner">Presentation</span>
-                                                                                        <span class="thumb-info-type">Brand</span>
+                                                                                        <span class="thumb-info-inner  name">Herbs</span>
+                                                                                        <span class="thumb-info-type brand">Herb</span>
                                                                                     </span>
                                                                                     <span class="thumb-info-action">
                                                                                         <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                                     </span>
                                                                                 </span>
                                                                             </span>
+                                                                            <span  class="field-content price">$18.85</span>
                                                                         </a>
+                                                                        
                                                                     </div>
-                                                                    <span  class="field-content">$18.85</span>
+
                                                                 </div>
                         
                                                                 <div class="col-lg-4 isotope-item Herbs">
@@ -415,17 +478,19 @@
                                                                                     <span class="thumb-info-wrapper">
                                                                                         <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                                         <span class="thumb-info-title">
-                                                                                            <span class="thumb-info-inner">Presentation</span>
-                                                                                            <span class="thumb-info-type">Brand</span>
+                                                                                            <span class="thumb-info-inner name">Herbs</span>
+                                                                                            <span class="thumb-info-type brand ">Herb</span>
                                                                                         </span>
                                                                                         <span class="thumb-info-action">
                                                                                             <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                                         </span>
                                                                                     </span>
                                                                                 </span>
+                                                                                <span  class="field-content price ">$28.85</span>
                                                                             </a>
+                                                                           
                                                                         </div>
-                                                                        <span  class="field-content">$28.85</span>
+                                                                       
                                                                     </div>
                                                                     <div class="col-lg-4 isotope-item Oils">
                                                                             <div class="Product-item">
@@ -434,17 +499,18 @@
                                                                                         <span class="thumb-info-wrapper">
                                                                                             <img src="img/_dAlkaline_Mineraals.jpg" class="img-fluid" alt="">
                                                                                             <span class="thumb-info-title">
-                                                                                                <span class="thumb-info-inner">Presentation</span>
-                                                                                                <span class="thumb-info-type">Brand</span>
+                                                                                                <span class="thumb-info-inner name">Oils</span>
+                                                                                                <span class="thumb-info-type brand ">Oil</span>
                                                                                             </span>
                                                                                             <span class="thumb-info-action">
                                                                                                 <span class="thumb-info-action-icon"><i class="fas fa-link"></i></span>
                                                                                             </span>
                                                                                         </span>
                                                                                     </span>
+                                                                                    <span  class="field-content price">$38.85</span>
                                                                                 </a>
                                                                             </div>
-                                                                            <span  class="field-content">$38.85</span>
+                                                                         
                                                                         </div>
                                 
 
@@ -453,6 +519,9 @@
 </div>
 
 </div>
+
+
+
 </div>
 </section>
    <!-- End Product Area -->

@@ -17,4 +17,15 @@ aside.sidebar{
     font-family: 'Times New Roman';
     text-align: inherit;
 }
+/* ---- input ---- */
 
+.input-group {
+    position: relative;
+    display: flex;
+ 
+  }
+form#Search.Search{
+ 
+
+   
+}
